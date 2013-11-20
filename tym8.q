@@ -13,17 +13,7 @@ A[] not deadlock
 /*
 
 */
-E<> hra.ZVITEZIL_hrac2 && ! hra.NEKOREKTNI_TAH_hrace1
-
-/*
-
-*/
-A[] hra.ZVITEZIL_hrac1
-
-/*
-
-*/
-A[] not hra.ZVITEZIL_hrac2
+E<> hra.BOARD_READY
 
 /*
 
@@ -44,3 +34,43 @@ A[] not hra.NEKOREKTNI_TAH_hrace1 and not hra.NEKOREKTNI_TAH_hrace2
 
 */
 E<> hra.NEKOREKTNI_TAH_hrace1 || hra.NEKOREKTNI_TAH_hrace2
+
+/*
+
+*/
+E<> hrac1.HLEDA_TAH and hrac2.HLEDA_TAH
+
+/*
+
+*/
+E<> hrac1.NASEL_TAH and hrac2.HLEDA_TAH
+
+/*
+
+*/
+E<> hrac1.HLEDA_TAH and hrac2.NASEL_TAH
+
+/*
+
+*/
+E<> hrac1.NASEL_TAH and hrac2.NASEL_TAH
+
+/*
+
+*/
+E<> hrac1.CEKA and hrac2.HLEDA_TAH
+
+/*
+
+*/
+E<> hrac1.CEKA and hrac2.NASEL_TAH
+
+/*
+
+*/
+E<> hrac1.HLEDA_TAH and hrac2.CEKA
+
+/*
+
+*/
+E<> hrac1.NASEL_TAH and hrac2.CEKA
