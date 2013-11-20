@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
 //const int MAX = 2;
-int zapalky[8][8] = {{0,0,0,0,0,0,0,0},{1,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0}};
-int pocet_zapalek = 1;
+int zapalky[8][8] = {{0,1,0,0,0,0,0,0},{1,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0}};
+int pocet_zapalek = 2;
 int vezmi = 0; // 0-7 row, 8-15 column
 int row;
 int column;
@@ -93,7 +93,7 @@ void updateBoard() {
 }
 
 bool isBoardOk() {
-	return pocet_zapalek &gt; 2;
+	return pocet_zapalek &gt; 3;
 }</declaration><template><name x="5" y="5">hra_nim</name><parameter>int &amp;zapalky[8][8], int &amp;vezmi, broadcast chan &amp;hraje_hrac1, broadcast chan &amp;hraje_hrac2</parameter><declaration>// Place local declarations here.
 
 void doMove() {

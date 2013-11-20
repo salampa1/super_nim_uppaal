@@ -18,7 +18,7 @@ E<> hra.ZVITEZIL_hrac2 && ! hra.NEKOREKTNI_TAH_hrace1
 /*
 
 */
-A[] hra.ZVITEZIL_hrac1
+A[] not hra.ZVITEZIL_hrac1
 
 /*
 
