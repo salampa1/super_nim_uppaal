@@ -5,7 +5,6 @@ int pocet_zapalek = 1;
 int vezmi = 0; // 0-7 row, 8-15 column
 int row;
 int column;
-int value_count = 0;
 broadcast chan hral_hrac1;
 broadcast chan hral_hrac2;
 
@@ -91,11 +90,10 @@ void updateBoard() {
 	if (zapalky[row][column] != 1)
 		pocet_zapalek ++;
 	zapalky[row][column] = 1;
-	value_count ++;
 }
 
 bool isBoardOk() {
-	return value_count &gt; 64;
+	return pocet_sirek &gt; 2;
 }</declaration><template><name x="5" y="5">hra_nim</name><parameter>int &amp;zapalky[8][8], int &amp;vezmi, broadcast chan &amp;hraje_hrac1, broadcast chan &amp;hraje_hrac2</parameter><declaration>// Place local declarations here.
 
 void doMove() {
