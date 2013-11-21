@@ -93,7 +93,7 @@ void updateBoard() {
 }
 
 bool isBoardOk() {
-	return pocet_zapalek &gt; 2;
+	return pocet_zapalek &gt; 3;
 }</declaration><template><name x="5" y="5">hra_nim</name><parameter>int &amp;zapalky[8][8], int &amp;vezmi, broadcast chan &amp;hraje_hrac1, broadcast chan &amp;hraje_hrac2</parameter><declaration>// Place local declarations here.
 
 void doMove() {

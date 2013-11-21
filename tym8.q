@@ -18,6 +18,10 @@ E<> hra.BOARD_READY
 /*
 
 */
+A[] not hra.ZVITEZIL_hrac1
+/*
+
+*/
 E<> hra.ZVITEZIL_hrac1
 
 /*
